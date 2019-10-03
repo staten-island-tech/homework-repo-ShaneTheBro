@@ -1,36 +1,24 @@
-function greet(firstName = 'John', lastName = 'Doe'){
-    //if(typeof firstName === 'undefined'){firstName = "John"}
-    //if (typeof lastName === 'undefined'){lastName = 'Doe'}
-    //console.log('hello');
-    return 'Hello' + firstName + ' ' + lastName;
-}
+const list = [  <li data-time="5:17">Flexbox Video</li>
+<li data-time="8:22">Flexbox Video</li>
+<li data-time="3:34">Redux Video</li>
+<li data-time="5:23">Flexbox Video</li>
+<li data-time="7:12">Flexbox Video</li>
+<li data-time="7:24">Redux Video</li>
+<li data-time="6:46">Flexbox Video</li>
+<li data-time="4:45">Flexbox Video</li>
+<li data-time="4:40">Flexbox Video</li>
+<li data-time="7:58">Redux Video</li>
+<li data-time="11:51">Flexbox Video</li>
+<li data-time="9:13">Flexbox Video</li>
+<li data-time="5:50">Flexbox Video</li>
+<li data-time="5:52">Redux Video</li>
+<li data-time="5:49">Flexbox Video</li>
+<li data-time="8:57">Flexbox Video</li>
+<li data-time="11:29">Flexbox Video</li>
+<li data-time="3:07">Flexbox Video</li>
+<li data-time="5:59">Redux Video</li>
+<li data-time="3:31">Flexbox Video</li>];
 
-//console.log(greet());
 
-const square = function(x = 3){
-    return x*x;
-};
-
-// console.log(square());
-
-(function(){
-    console.log('IIFE Ran..');
-
-})();
-
-(function(name){
-    console.log('Hello' + name);
-
-})('Brad');
-
-const todo = {
-    add:function(){
-        console.log('add todo..');
-    },
-    edit: function(id){
-        console.log(`delete todo ${id}`);
-    }
-}
- todo.add();
- todo.edit(22);
- todo.delete();
+let array = Array.from(list);
+console.log(array);
